@@ -227,7 +227,7 @@ function SWEP:HandleRespawn()
 	end)
 
 	ply:SetMaxHealth(math.random(25, 75))
-	ply:SetHealth(GetMaxHealth())
+	ply:SetHealth(ply:GetMaxHealth())
 
 	SendFullStateUpdate()
 
